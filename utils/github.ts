@@ -40,10 +40,11 @@ export const saveGitHubContext = async (
     repo: GitHubRepo,
     webhookSecret: string
 ) => {
+    console.log(webhookSecret)
     const data = {
         repoId: repo.id,
         repoName: repo.name,
-        webhookSecret
+        webhookSecret: webhookSecret
     };
 
     const response = await fetch("/api/github/save", {
@@ -71,6 +72,9 @@ export const setGitHubWebook = async (
             secret: webhookSecret
         }
     };
+
+
+    console.log(webhookSecret)
 
     const response = await fetch(
         `https://api.github.com/repos/${repo.name}/hooks`,
