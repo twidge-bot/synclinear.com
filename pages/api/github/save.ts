@@ -22,7 +22,6 @@ export default async function handle(
             create: {
                 repoId,
                 repoName,
-                webhookSecret
             }
         });
 
