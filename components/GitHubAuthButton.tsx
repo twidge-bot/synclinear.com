@@ -137,7 +137,8 @@ const GitHubAuthButton = ({
     const deployWebhook = useCallback(() => {
         if (!chosenRepo || deployed) return;
 
-        const webhookSecret = `${uuid()}`;
+        let webhookSecret = (Math.random() + 1).toString(36).substring(32);
+        
         saveGitHubContext(chosenRepo, webhookSecret).catch(err =>
             alert(`Error saving repo to DB: ${err}`)
         );

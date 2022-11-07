@@ -49,7 +49,7 @@ model GitHubRepo {
 
     repoId   Int    @unique
     repoName String
-
+    webhookSecret String
     Sync Sync[]
 
     SyncedIssue SyncedIssue[]
