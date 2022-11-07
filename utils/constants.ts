@@ -1,5 +1,5 @@
 export const LINEAR = {
-    OAUTH_ID: "de24196afa78e6f3f99875b753a3ae29",
+    OAUTH_ID: "2e0280797dc102bc46995782d379c57f",
     OAUTH_URL: "https://linear.app/oauth/authorize",
     TOKEN_URL: "https://api.linear.app/oauth/token",
     SCOPES: ["write"],
@@ -13,7 +13,7 @@ export const LINEAR = {
 };
 
 export const GITHUB = {
-    OAUTH_ID: "487937ed57e1d5ffea0d",
+    OAUTH_ID: "f56927de8a1d005bff0d",
     OAUTH_URL: "https://github.com/login/oauth/authorize",
     TOKEN_URL: "https://github.com/login/oauth/access_token",
     SCOPES: ["repo", "write:repo_hook", "read:user", "user:email"],
